@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>Web Interface Monitoring</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="Content-Language" content="en" />
+	<meta name="robots" content="noindex, nofollow" />
+	<link rel="stylesheet" type="text/css" href="stylesheets/interface/menu.css" />
+	<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="js/menu.js"></script>
+</head>
+<body>
+	<div id="menu">
+		<h2>Current Status</h2>
+		<ul>
+			<li class="menuli_style1"><a href="/nagios/cgi-bin/tac.cgi" target="main">Tactical Overview</a></li>
+			<li class="menuli_style2"><a href="/nagios/cgi-bin/status.cgi?hostgroup=all&amp;style=hostdetail" target="main">Hosts</a></li>
+			<li class="menuli_style1"><a href="/nagios/cgi-bin/status.cgi?host=all" target="main">Services</a></li>
+			<li class="menuli_style2"><a href="/nagios/cgi-bin/status.cgi?hostgroup=all&amp;style=overview" target="main">Host Groups</a></li>
+			<li class="menuli_style1"><a href="/nagios/cgi-bin/status.cgi?servicegroup=all&amp;style=overview" target="main">Service Groups</a></li>
+			<li class="menuli_style2"><a href="/nagios/cgi-bin/status.cgi?hostgroup=all&amp;style=hostdetail&amp;hoststatustypes=12" target="main">Host Problems</a></li>
+			<li class="menuli_style1"><a href="/nagios/cgi-bin/status.cgi?host=all&amp;servicestatustypes=28" target="main">Service Problems</a></li>
+			<li class="menuli_style2"><a href="/nagios/map.php?host=all" target="main">Map</a> <a href="/nagios/cgi-bin/statusmap.cgi?host=all" target="main">(Legacy)</a></li>
+			<li class="menuli_style1"><a href="/nagios/cgi-bin/outages.cgi" target="main">Network Outages</a></li>
+		</ul>
+		<h2>Reports</h2>
+		<ul>
+			<li class="menuli_style1"><a href="/nagios/cgi-bin/avail.cgi" target="main">Availability</a></li>
+			<li class="menuli_style2"><a href="/nagios/trends.html" target="main">Trends</a> <a href="/nagios/cgi-bin/trends.cgi" target="main">(Legacy)</a></li>
+			<li class="menuli_style1"><a href="/nagios/cgi-bin/history.cgi?host=all" target="main">Alert History</a></li>
+			<li class="menuli_style2"><a href="/nagios/cgi-bin/summary.cgi" target="main">Alert Summary</a></li>
+			<li class="menuli_style1"><a href="/nagios/histogram.html" target="main">Alert Histogram</a> <a href="/nagios/cgi-bin/histogram.cgi" target="main">(Legacy)</a></li>
+			<li class="menuli_style2"><a href="/nagios/cgi-bin/notifications.cgi?contact=all" target="main">Notifications</a></li>
+			<li class="menuli_style1"><a href="/nagios/cgi-bin/showlog.cgi" target="main">Event Log</a></li>
+		</ul>
+		<h2>System</h2>
+		<ul>
+			<li class="menuli_style1"><a href="/nagios/cgi-bin/extinfo.cgi?type=3" target="main">Comments</a></li>
+			<li class="menuli_style2"><a href="/nagios/cgi-bin/extinfo.cgi?type=6" target="main">Downtime</a></li>
+			<li class="menuli_style1"><a href="/nagios/cgi-bin/extinfo.cgi?type=0" target="main">Process Info</a></li>
+			<li class="menuli_style2"><a href="/nagios/cgi-bin/extinfo.cgi?type=4" target="main">Performance Info</a></li>
+			<li class="menuli_style1"><a href="/nagios/cgi-bin/extinfo.cgi?type=7" target="main">Scheduling Queue</a></li>
+			<li class="menuli_style2"><a href="/nagios/cgi-bin/config.cgi" target="main">Configuration</a></li>
+		</ul>
+	</div>
+</body>
+</html>
