@@ -1,3 +1,9 @@
+<?php
+include_once(dirname(__FILE__).'/config.inc.php');
+
+$link_target = 'main';
+?>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
@@ -12,7 +18,7 @@
 <body>
 	<div id="navigation">
 		<div id="search_box">
-			<form action="/nagios/cgi-bin/status.cgi" method="get" target="main">
+			<form action="<?php echo $cfg["cgi_base_url"];?>/status.cgi" method="get" target="<?php echo $link_target;?>">
 				<fieldset>
 					<input id="search" name="host" type="text" />
 					<input type="hidden" name="navbarsearch" value="1" />

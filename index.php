@@ -10,9 +10,9 @@
 	<frameset rows="60,*" frameborder="0" framespacing="0">
 		<frame src="top.html" name="top" />
 		<frameset cols="200,*" frameborder="0" framespacing="0">
-			<frame src="menu.html" name="side" target="main" noresize="noresize" />
+			<frame src="menu.php" name="side" target="main" noresize="noresize" />
 			<frameset rows="26,*" frameborder="0" framespacing="0">
-				<frame src="sidebar.html" name="navigation" noresize="noresize" />
+				<frame src="sidebar.php" name="navigation" noresize="noresize" />
 				<frame src="cgi-bin/tac.cgi" name="main" noresize="noresize" />
 			</frameset>
 		</frameset>
