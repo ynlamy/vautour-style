@@ -11,7 +11,7 @@ $link_target = 'main';
 	<meta http-equiv="Content-Language" content="en" />
 	<meta name="robots" content="noindex, nofollow" />
 	<link rel="stylesheet" type="text/css" href="stylesheets/interface/menu.css" />
-	<script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
 	<script type="text/javascript" src="js/menu.js"></script>
 </head>
 <body>
@@ -25,16 +25,16 @@ $link_target = 'main';
 			<li><a href="<?php echo $cfg["cgi_base_url"];?>/status.cgi?servicegroup=all&amp;style=overview" target="<?php echo $link_target;?>">Service Groups</a></li>
 			<li><a href="<?php echo $cfg["cgi_base_url"];?>/status.cgi?hostgroup=all&amp;style=hostdetail&amp;hoststatustypes=12" target="<?php echo $link_target;?>">Host Problems</a></li>
 			<li><a href="<?php echo $cfg["cgi_base_url"];?>/status.cgi?host=all&amp;servicestatustypes=28" target="<?php echo $link_target;?>">Service Problems</a></li>
-			<li><a href="map.php?host=all" target="<?php echo $link_target;?>">Map</a> <a href="<?php echo $cfg["cgi_base_url"];?>/statusmap.cgi?host=all" target="<?php echo $link_target;?>">(Legacy)</a></li>
+			<li><a href="<?php echo $cfg["cgi_base_url"];?>/statusmap.cgi?host=all" target="<?php echo $link_target;?>">Map</a></li>
 			<li><a href="<?php echo $cfg["cgi_base_url"];?>/outages.cgi" target="<?php echo $link_target;?>">Network Outages</a></li>
 		</ul>
 		<h2>Reports</h2>
 		<ul>
 			<li><a href="<?php echo $cfg["cgi_base_url"];?>/avail.cgi" target="<?php echo $link_target;?>">Availability</a></li>
-			<li><a href="trends.html" target="<?php echo $link_target;?>">Trends</a> <a href="<?php echo $cfg["cgi_base_url"];?>/trends.cgi" target="<?php echo $link_target;?>">(Legacy)</a></li>
+			<li><a href="<?php echo $cfg["cgi_base_url"];?>/trends.cgi" target="<?php echo $link_target;?>">Trends</a></li>
 			<li><a href="<?php echo $cfg["cgi_base_url"];?>/history.cgi?host=all" target="<?php echo $link_target;?>">Alert History</a></li>
 			<li><a href="<?php echo $cfg["cgi_base_url"];?>/summary.cgi" target="<?php echo $link_target;?>">Alert Summary</a></li>
-			<li><a href="histogram.html" target="<?php echo $link_target;?>">Alert Histogram</a> <a href="<?php echo $cfg["cgi_base_url"];?>/histogram.cgi" target="<?php echo $link_target;?>">(Legacy)</a></li>
+			<li><a href="<?php echo $cfg["cgi_base_url"];?>/histogram.cgi" target="<?php echo $link_target;?>">Alert Histogram</a></li>
 			<li><a href="<?php echo $cfg["cgi_base_url"];?>/notifications.cgi?contact=all" target="<?php echo $link_target;?>">Notifications</a></li>
 			<li><a href="<?php echo $cfg["cgi_base_url"];?>/showlog.cgi" target="<?php echo $link_target;?>">Event Log</a></li>
 		</ul>

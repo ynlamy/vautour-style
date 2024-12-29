@@ -12,7 +12,7 @@ $link_target = 'main';
 	<meta http-equiv="Content-Language" content="en" />
 	<meta name="robots" content="noindex, nofollow" />
 	<link rel="stylesheet" type="text/css" href="stylesheets/interface/common.css" />
-	<script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
 	<script type="text/javascript" src="js/search.js"></script>
 </head>
 <body>
